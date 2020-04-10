@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="principal">
+        <form name="formulario">
+            <input class="vista" name="vista"  disabled />
+          </form>
+                <table>
+                    <tr>
+                        <td><input class="buton" type="button" onclick="back()" value="<"/></td>
+                        <td><input class="buton" type="button" onclick="clean()" value="C"/></td>
+                        <td><input class="buton" type="button" onclick="shownumber('/')" value="/"/></td>
+                        <td><input class="buton" type="button" onclick="shownumber('*')" value="x"/></td>
+                    </tr>
+                    <tr>
+                        <td><input class="buton" type="button" onclick= "shownumber(7)" value="7"/></td>
+                        <td><input class="buton" type="button" onclick= "shownumber(8)" value="8"/></td>
+                        <td><input class="buton" type="button" onclick= "shownumber(9)" value="9"/></td>
+                        <td><input class="buton" type="button" onclick= "shownumber('-')" value="-"/></td>
+                    </tr>
+                    <tr>
+                        <td><input class="buton" type="button" onclick= "shownumber(4)" value="4"/></td>
+                        <td><input class="buton" type="button" onclick= "shownumber(5)" value="5"/></td>
+                        <td><input class="buton" type="button" onclick= "shownumber(6)" value="6"/></td>
+                        <td><input class="buton" type="button" onclick= "shownumber('+')" value="+"/></td>
+                    </tr>
+                    <tr>
+                        <td><input class="buton" type="button" onclick= "shownumber(1)" value="1"/></td>
+                        <td><input class="buton" type="button" onclick= "shownumber(2)" value="2"/></td>
+                        <td><input class="buton" type="button" onclick= "shownumber(3)" value="3"/></td>
+                        <td rowspan="5"><input class="buton rojo" style="height:106px" type="button" onclick= "resolve()" value="="/></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><input class="buton" style="width:106px" type="button" onclick= "shownumber(0)" value="0"/></td>
+                      <td><input class="buton" type="button" onclick= "shownumber('.')" value="."/></td>
+                    </tr>
+                </table>
+                
+    </div>
+</body>
+</html>
